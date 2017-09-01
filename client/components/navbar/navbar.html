@@ -1,0 +1,72 @@
+<!--Header-->
+<header class="Header-container">
+  <div class="container">
+    <div class="row Header-containerAlignV">
+      <div class="col-xs-6">
+        <h1>AdsiShop</h1>
+      </div>
+      <div class="col-xs-6 text-right">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">
+          <!--&#9776;-->
+          <i class="fa fa-bars"></i>
+        </button><!--menu hamburguesa-->
+        <a href="#" class="Login hidden-xs">Login</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!--/header-->
+<!--menu-->
+<div class="MenuContainer">
+  <nav class="collapse navbar navbar-collapse NavbarMargin" id="navMenu"> <!--para que se ejecute....-->
+    <div class="container">
+      <div class="row AlignNavbar">
+        <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 AlignItemsNavbar"> <!--'col-xs-10 col-md-4' el ul se organiza de acuerdo a ese tamaño-->
+          <ul class="nav navbar-nav"> <!--'nav navbar-nav' esto ba a tomar forma de barra de navegación-->
+            <li ng-click="vm.ocultarCollapse()">
+              <a href="" class="navbar-link text-center">Home</a>
+            </li>
+            <li ng-click="vm.ocultarCollapse()">
+              <a href="" class="navbar-link text-center"> Catálogo</a>
+            </li>
+            <li ng-click="vm.ocultarCollapse()">
+              <a href="" class="navbar-link text-center"> Carrito </a>
+            </li>
+            <li ng-click="vm.ocultarCollapse()">
+              <a href="" class="navbar-link text-center hidden-sm hidden-md hidden-lg"> Login </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden-xs col-md-6 search-bar-navbar">
+          <form>
+            <div class="input-group"> <!--agrupa-->
+              <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+              <span class="input-group-btn"> <!--agrupa botones-->
+                <button class="btn Btn-adsi">
+                  <span class="hidden-xs hidden-sm">Buscar</span> <!-- etiqueta en linea.. 'hidden-xs hidden-sm que oculte la palbra buscar para esos tamaños'-->
+                  <i class="fa fa-search IconSearch visible-xs visible-sm"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="col-xs-12 visible-xs search-bar">
+    <form>
+      <div class="input-group"> <!--agrupa-->
+        <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+        <span class="input-group-btn"> <!--agrupa botones-->
+          <button class="btn Btn-adsi">
+            <span class="hidden-xs hidden-sm">Buscar</span> <!-- etiqueta en linea.. 'hidden-xs hidden-sm que oculte la palbra buscar para esos tamaños'-->
+            <i class="fa fa-search IconSearch visible-xs visible-sm"></i>
+          </button>
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!--/menu-->
