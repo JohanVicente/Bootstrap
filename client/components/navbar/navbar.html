@@ -22,17 +22,17 @@
     <div class="container">
       <div class="row AlignNavbar">
         <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 AlignItemsNavbar"> <!--'col-xs-10 col-md-4' el ul se organiza de acuerdo a ese tamaño-->
-          <ul class="nav navbar-nav"> <!--'nav navbar-nav' esto ba a tomar forma de barra de navegación-->
-            <li ng-click="vm.ocultarCollapse()">
-              <a href="" class="navbar-link text-center">Home</a>
+          <ul class="nav navbar-nav Focus"> <!--'nav navbar-nav' esto ba a tomar forma de barra de navegación-->
+            <li ng-click="vm.ocultarCollapse()" ui-sref-active="active">
+              <a ui-sref="main" class="navbar-link text-center">Home</a>
             </li>
-            <li ng-click="vm.ocultarCollapse()">
-              <a href="" class="navbar-link text-center"> Catálogo</a>
+            <li ng-click="vm.ocultarCollapse()" ui-sref-active="active">
+              <a ui-sref="catalogo" class="navbar-link text-center">Catálogo</a>
             </li>
-            <li ng-click="vm.ocultarCollapse()">
-              <a href="" class="navbar-link text-center"> Carrito </a>
+            <li ng-click="vm.ocultarCollapse()" ui-sref-active="active">
+              <a ui-sref="producto" class="navbar-link text-center"> Carrito </a>
             </li>
-            <li ng-click="vm.ocultarCollapse()">
+            <li ng-click="vm.ocultarCollapse()" ui-sref-active="active">
               <a href="" class="navbar-link text-center hidden-sm hidden-md hidden-lg"> Login </a>
             </li>
           </ul>
